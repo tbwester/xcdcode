@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Thomas Wester, Autumn 2015
+# Script for getting times in hours between runs
+# Usage: put filenames in runs.txt, then do ./getdates
+# Example run entry: ds50daq_20150928T033047.root
+
+COUNTER=0
+while read LINE; do
+      
+    t="${LINE%%.*}"
+    t="${t##*_}"
+    y="${t:0:4}"
+    m="${t:4:2}"
+    d="${t:6:2}"
+    h="${t:9:2}"
+    min="${t:11:2}"
+    s="${t:13:2}"
+
+    if [ $COUNTER -eq 0 ]; then
+      date1="$y/$m/$d $h:$min:$s"
+    fi 
+
+    date2="$y/$m/$d $h:$min:$s"
+
+    ddiff=$(( $(date -d "$date2" "+%s") - $(date -d "$date1" "+%s") ))
+
+    echo $y/$m/$d $h:$min:$s "|" $(echo "$ddiff/86400" | bc -l | awk '{printf "%08f\n", $0}')
+    
+    let COUNTER=COUNTER+1
+done < runs.txt
