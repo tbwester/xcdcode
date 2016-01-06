@@ -96,8 +96,6 @@ void stability() {
     h1->Fit("gaus1","R+","",125,190);
     h1->Fit("gaus2","R+","",250,325);
 // ----------------------------
-
-
     string outfile = "hist/" + RunName + ".root";
     TFile f(outfile.c_str(),"RECREATE");
     h1->Write(RunName.c_str());

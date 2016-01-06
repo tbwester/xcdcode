@@ -8,7 +8,8 @@
 //        Make sure the files exist and have
 //        laser histograms in them.
 //        Individual histograms are outputted to
-//        "hist" folder for checking fits
+//        "hist" folder for checking fits.
+//        Make sure to modify fit region below.
 ///////////////////////////////////////////
 
 #include"TFile.h"
@@ -71,6 +72,8 @@ void singlepe() {
     TFile *f1 = TFile::Open(filename.c_str());
     TH1D *h1 = (TH1D *)f1->Get("channel_0_laser_int_hist");
 
+
+// ---- MODIFY THIS REGION ----
     int peakWidth = 20;
     int peakCenter = 130;
 
@@ -80,6 +83,8 @@ void singlepe() {
     mygaus->SetParameter(0,1);
     mygaus->SetParameter(1, peakCenter);
     mygaus->SetParameter(2, 80);
+
+// ----------------------------
 
     h1->Fit("mygaus","R","",peakCenter - peakWidth, peakCenter + peakWidth);
     string outfile = "hist/" + RunName + ".root";

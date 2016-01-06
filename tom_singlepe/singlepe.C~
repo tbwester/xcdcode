@@ -6,7 +6,9 @@
 //        Gets laser histograms from files
 //        listed in runlist.txt
 //        Make sure the files exist and have
-//        laser histograms in them
+//        laser histograms in them.
+//        Individual histograms are outputted to
+//        "hist" folder for checking fits
 ///////////////////////////////////////////
 
 #include"TFile.h"
