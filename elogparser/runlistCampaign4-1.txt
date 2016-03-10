@@ -1,0 +1,93 @@
+Tuesday, December 22, 2015, 10:18 (ES)
+
+Stopped the background loop after run 866 finished. Will take a laser run before changing the source. 
+
+Run#: 867
+Start Time:
+RunFileName: ds50daq_20151222T163857.root
+Run Type: laser
+Source: background
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+*************************************************************************************************************************************************************
+
+Inserted the YBe source. Take another laser
+
+*************************************************************************************************************************************************************
+
+Run#: 868
+Start Time:
+RunFileName: ds50daq_20151222T170627.root
+Run Type: laser
+Source: background RS - typo ??
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+~ 11:30 started a a loop of YBe.
+
+Run#: 869 [.....]
+Start Time: 
+RunFileName: 
+Run Type: regular
+Source: backgrund RS - typo ??
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Filenames:
+Run 869: ds50daq_20151222T172042.root
+Run 870: ds50daq_20151222T181441.root
+Run 871: ds50daq_20151222T190823.root
+Run 872: ds50daq_20151222T200441.root
+Run 873: ds50daq_20151222T210135.root
+Run 874: ds50daq_20151222T215835.root
+Run 875: ds50daq_20151222T225410.root
+Run 876: ds50daq_20151222T235028.root
+Run 877: ds50daq_20151223T004626.root
+Run 878: ds50daq_20151223T014312.root
+Run 879: ds50daq_20151223T023909.root
+Run 880: ds50daq_20151223T033510.root
+Run 881: ds50daq_20151223T043152.root
+​Run 882: ds50daq_20151223T052652.root
+​Run 883: ds50daq_20151223T062247.root
+​Run 884: ds50daq_20151223T071849.root
+​Run 885: ds50daq_20151223T081528.root
+​Run 886: ds50daq_20151223T091206.root
+​Run 887: ds50daq_20151223T100941.root
+​Run 888: ds50daq_20151223T110458.root
+​Run 889: ds50daq_20151223T120044.root
+Run 890: ds50daq_20151223T125603.root
+Run 891: ds50daq_20151223T135153.root
+​Run 892: ds50daq_20151223T144834.root
+​Run 893: ds50daq_20151223T154320.root
+​Run 894: ds50daq_20151223T163900.root
+​Run 895: ds50daq_20151223T173418.root
+​Run 896: ds50daq_20151223T183025.root
+​Run 897: ds50daq_20151223T192515.root

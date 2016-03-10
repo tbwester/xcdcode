@@ -1,0 +1,1572 @@
+Run#: 796 [...]
+Start Time: Saturday, December 19, 2015, 13:58
+RunFileName: 
+Run Type: regular
+Source: YAl
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+
+Filenames:
+Run 796: ds50daq_20151219T200042.root
+?Run 797: ds50daq_20151219T204209.root
+?Run 798: ds50daq_20151219T212407.root
+?Run 799: ds50daq_20151219T220540.root
+Run 800: ds50daq_20151219T224800.root
+Run 801: ds50daq_20151219T233104.root
+Run 802: ds50daq_20151220T001418.root
+Run 803: ds50daq_20151220T005630.root
+Run 804: ds50daq_20151220T013932.root
+Run 805: ds50daq_20151220T022137.root
+Run 806: ds50daq_20151220T030341.root
+Run 807: ds50daq_20151220T034641.root
+Run 808: ds50daq_20151220T042944.root
+Run 809: ds50daq_20151220T051225.root
+Run 810: ds50daq_20151220T055448.root
+Run 811: ds50daq_20151220T063724.root
+Run 812: ds50daq_20151220T072100.root
+Run 813: ds50daq_20151220T080251.root
+Run 814: ds50daq_20151220T084540.root
+Run 815: ds50daq_20151220T092813.root
+Run 816: ds50daq_20151220T101100.root
+Run 817: ds50daq_20151220T105307.root
+Run 818: ds50daq_20151220T113534.root
+Run 819: ds50daq_20151220T121843.root
+Run 820: ds50daq_20151220T130108.root
+Run 821: ds50daq_20151220T134414.root
+Run 822: ds50daq_20151220T142716.root
+Run 823: ds50daq_20151220T150900.root
+Run 824: ds50daq_20151220T155051.root
+Run 825: ds50daq_20151220T163215.root
+Run 826: ds50daq_20151220T171311.root
+
+Sunday, December 20, 2015, 12:08 - LG
+
+Stopped LOOP at Run 827. That I guess is CRASHED.
+
+Turned on laser and chnage trigger mode.
+
+Run#: 828
+Start Time: Sunday, December 20, 2015, 12:10
+RunFileName: ds50daq_20151220T180940.root
+Run Type: laser
+Source: YAl
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes 
+
+Sunday, December 20, 2015, 12:22 
+
+Preparing for a Co57 Calibration before substituting the YAl with YBe.
+
+Removing the capacitor. LOcate the Co57 source.
+
+Run#: 829
+Start Time: 
+RunFileName: ds50daq_20151220T182405.root
+Run Type: laser
+Source: YAl + Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: no 
+
+Turned off laser. Changed trigger logic.
+
+Run#: 830
+Start Time: 
+RunFileName: ds50daq_20151220T183537.root
+Run Type: regular
+Source: YAl + Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: no 
+
+Reinserted the capacitor. Turned on the laser and change the trigger logic.
+
+Run#: 831
+Start Time: Sunday, December 20, 2015, 13:36
+RunFileName: ds50daq_20151220T193716.root
+Run Type: laser
+Source: YAl + Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes 
+
+Turned on fields. The first field we would like to explore is 181V/cm (LUX). The room temeprature distance between the grid at room temeprature is 10.4cm. Rescaling for 1.5% thrmal contraction of PTFE this would mean ~10.25cm. Hence a V=185.5V would be needed among the two grids.
+
+Preparing for the field.
+
+TOP GRID: Ch0 of 4Ch HV programmable power supply from CAEN. Set positive. Set V_MAX=+20V. Set V_set=0.
+
+BOTTOM GRID: Ch1 of 4Ch HV programmable power supply from CAEN. Set negative. Set V_MAX=-200V. Set Step for rampup to 20V/s. Set V_set=-185.5V.
+
+Sunday, December 20, 2015, 14:00
+
+Turn ON Ch1. The channel is reading -185V.
+
+Left OFF Ch0 since the grid should be already at ground since touching the PMT case. I tested and the top micromidgy pin is in connection with signal ground.
+
+The micromidgy plastic connector does not seem to fit well on the flange. But it seems to make contact. Check the other side of the cable going into the CAEN and I see connection between its central pin and the signal ground.
+
+Leaving some time for the PMT to adapt to new conditions although it should be protected by the top mesh.
+
+Removed the capacitor.
+
+Run#: 832
+Start Time: Sunday, December 20, 2015, 14:17 
+RunFileName: ds50daq_20151220T201658.root
+Run Type: laser
+Source: YAl + Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V;
+
+Removed the YAl source as well since Juan will need it tomorrow morning.
+
+****************************************************************
+
+**Doing this we disconnected the fiber and I forgot to reisert it so this makes the following laser run, noise runs **
+
+****************************************************************
+
+Run#: 833 (no fiber!)
+Start Time: Sunday, December 20, 2015, 14:45 
+RunFileName: ds50daq_20151220T204524.root
+Run Type: laser
+Source: Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V;
+
+Turned off the laser and changed trigger mode.
+
+Run#: 834
+Start Time: Sunday, December 20, 2015, 15:01
+RunFileName: ds50daq_20151220T210114.root
+Run Type: regular
+Source: Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: no
+Field: 181V/cm - 185V;
+
+Turned on the laser and changed trigger mode.
+
+Run#: 835 [CRASHED]
+Start Time: Sunday, December 20, 2015, 16:03
+RunFileName: 
+Run Type: laser
+Source: Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V;
+
+Run#: 836 (no fiber!)
+Start Time: Sunday, December 20, 2015, 16:10
+RunFileName: ds50daq_20151220T221007.root
+Run Type: laser
+Source: Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V;
+
+Inserted the capacitor back, Removed the 57Co source and preparing for a long background acquisition.
+
+Run#: 837 (no fiber!)
+Start Time: Sunday, December 20, 2015, 16:21
+RunFileName: ds50daq_20151220T222144.root
+Run Type: laser
+Source: background
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Turned of laser. Changed trigger logic for starting a LOOP
+
+Run#: 838 [....] STOPPED MANUALLY AND CRASHED 
+Start Time: Sunday, December 20, 2015, 16:33
+RunFileName: 
+Run Type: regular
+Source: backgrund
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Sunday, December 20, 2015, 16:40
+
+****************************************************************
+
+**JUST FIGURED OUT THAT THE FIBVER WAS NOT IN.
+
+       REINSERTED THE FIBER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! **
+
+****************************************************************
+
+Turned on laser. Changed trigger logic
+
+Run#: 839
+Start Time: Sunday, December 20, 2015, 16:38 
+RunFileName: ds50daq_20151220T223810.root
+Run Type: laser
+Source: background
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Turned off laser. Changed trigger logic
+
+Run#: 840 [.....]
+Start Time: 
+RunFileName: 
+Run Type: regular
+Source: backgrund
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Filenames:
+Run 840: ds50daq_20151220T225102.root
+Run 841: ds50daq_20151221T004209.root
+Run 842: ds50daq_20151221T023706.root
+Run 843: ds50daq_20151221T043250.root
+Run 844: ds50daq_20151221T063022.root
+Run 845: ds50daq_20151221T082349.root
+Run 846: ds50daq_20151221T102135.root
+Run 847: ds50daq_20151221T121646.root
+Run 848: ds50daq_20151221T141211.root
+
+
+Monday, December 21, 2015, 10:10 (ES)
+
+Stopped the loop after Run 848 concluded. Took a laser run.
+
+Run#: 849
+Start Time: Monday, December 21, 2015, 10:11
+RunFileName: ds50daq_20151221T160916.root
+Run Type: laser
+Source: background
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Monday, December 21, 2015, 10:21 inserted the Co57 source. Take another laser run.
+
+Run#: 850
+Start Time: Monday, December 21, 2015, 10:22
+RunFileName: ds50daq_20151221T162105.root
+Run Type: laser
+Source: strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Monday, December 21, 2015, 10:35 removed the capacitor for a Co57 regular run. 
+
+Run#: 851
+Start Time: Monday, December 21, 2015, 10:35
+RunFileName: ds50daq_20151221T163446.root
+Run Type: regular
+Source: strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V;
+
+Run#: 852
+Start Time: 
+RunFileName: ds50daq_20151221T173707.root
+Run Type: laser
+Source: strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V;
+
+Take a noise run. 
+
+Run#: 853
+Start Time: Monday, December 21, 2015, 11:54
+RunFileName: ds50daq_20151221T175317.root
+Run Type: laser/noise (fiber disconnected).
+Source: strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V;
+
+Monday, December 21, 2015, 12:20
+Reconnected the fiber and the capacitor. Removed the Co57 source. Juan needs more statistics for his Y88 tests, so will need the source again today/tonight. Decided to insert the source tomorrow morning. Will take more background in the meantime. 
+
+Run#: 854
+Start Time: Monday, December 21, 2015, 12:21
+RunFileName: ds50daq_20151221T181959.root
+Run Type: laser
+Source: background
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Monday, December 21, 2015, 12:35 Start a loop...
+
+Run#: 855 [.....]
+Start Time: 
+RunFileName: 
+Run Type: regular
+Source: backgrund
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V;
+
+Filenames:
+Run 855: ds50daq_20151221T183437.root
+?Run 856: ds50daq_20151221T202228.root
+?Run 857: ds50daq_20151221T221319.root
+Run 858: CRASHED
+?Run 859: ds50daq_20151222T003941.root
+?Run 860: ds50daq_20151222T023701.root
+?Run 861: ds50daq_20151222T043335.root
+?Run 862: ds50daq_20151222T063016.root
+?Run 863: ds50daq_20151222T082840.root
+?Run 864: ds50daq_20151222T102508.root
+Run 865: ds50daq_20151222T121923.root
+?Run 866: ds50daq_20151222T141632.root
+??
+Wednesday, December 23, 2015, 14:42
+
+Stopped YBe loop after Run 897 finished. Took laser run.
+
+Run#: 898
+Start Time:
+RunFileName: ds50daq_20151223T204117.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+ Noticed that I forgot to move the fan back to the detector after replacing the source. Moved the fan.
+
+Run#: 899
+Start Time:
+RunFileName: ds50daq_20151223T205355.root
+Run Type: laser/noise (fiber disconnected)
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Wednesday, December 23, 2015, 15:07 inserted the Co57 source
+
+Run#: 900
+Start Time: Wednesday, December 23, 2015, 15:08
+RunFileName: ds50daq_20151223T210812.root
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Run#: 901
+Start Time: Wednesday, December 23, 2015, 15:21
+RunFileName: ds50daq_20151223T212020.root
+Run Type: laser/noise (fiber disconnected)
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Wednesday, December 23, 2015, 15:33 Reconnected fiber, removed capacitor, and prepared for a Co57 run. 
+
+Run#: 902
+Start Time: 
+RunFileName: ds50daq_20151223T213519.root
+Run Type:  regular
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+Run#: 903
+Start Time: 
+RunFileName: ds50daq_20151223T224810.root
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us FORGOT TO CHANGE
+Total gate:  10us FORGOT TO CHANGE
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+Run#: 904
+Start Time: Wednesday, December 23, 2015, 17:04
+RunFileName: ds50daq_20151223T230302.root
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+ 
+
+Wednesday, December 23, 2015, 17:17 removed Co source.
+
+Run#: 905
+Start Time:
+RunFileName: ds50daq_20151223T231616.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+Run#: 906...(loop)
+Start Time:Wednesday, December 23, 2015, 17:57
+RunFileName: 
+Run Type: regular
+Source: YBe
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+Filenames:
+ 
+
+Run 906: ds50daq_20151223T233011.root
+Run 907: ds50daq_20151224T002033.root
+Run 908: ds50daq_20151224T011352.root
+?Run 909: ds50daq_20151224T020805.root
+Run 910: ds50daq_20151224T030151.root
+?Run 911: ds50daq_20151224T035651.root
+Run 912: ds50daq_20151224T045133.root
+?Run 913: ds50daq_20151224T054558.root
+Run 914: ds50daq_20151224T064100.root
+?Run 915: ds50daq_20151224T073536.root
+Run 916: ds50daq_20151224T082957.root
+?Run 917: ds50daq_20151224T092347.root
+Run 918: ds50daq_20151224T101658.root
+?Run 919: ds50daq_20151224T111046.root
+Run 920: ds50daq_20151224T120312.root
+?Run 921: CRASHED (by me)
+
+
+Thursday, December 24, 2015, 07:22 (ES) 
+
+Stopped YBe loop in the middle of Run 921, so 921 is effectively CRASHED. Took laser run.
+
+Run#: 922
+Start Time:Thursday, December 24, 2015, 07:23
+RunFileName: ds50daq_20151224T132225.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+***************************************************************************************************************************************************************
+
+Thursday, December 24, 2015, 08:04 Juan and I changed the source to YAl. Take a laser run. 
+
+***************************************************************************************************************************************************************
+
+Run#: 923
+Start Time: Thursday, December 24, 2015, 08:05
+RunFileName: 
+Run Type: laser
+Source: YAl
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+ 
+
+Thursday, December 24, 2015, 08:14 begin loop of YAl runs. 
+
+ 
+
+Sunday, December 27, 2015, 18:55 (ES)
+
+Stopped the YAl loop after Run 1012 finished. Took a laser run. 
+
+ 
+
+Run#: 1013
+Start Time: Sunday, December 27, 2015, 18:59
+RunFileName: ds50daq_20151228T005915.root
+Run Type: laser
+Source: YAl
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Sunday, December 27, 2015, 19:13 start another loop of runs, starting at Run 1014. 
+
+Run#: 1014... (loop)
+Start Time: 
+RunFileName: 
+Run Type: regular
+Source: YAl
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Filenames:
+
+Run 1014: ds50daq_20151228T011331.root
+Run 1015: ds50daq_20151228T021136.root
+?Run 1016: ds50daq_20151228T031113.root
+?Run 1017: ds50daq_20151228T041022.root
+?Run 1018: ds50daq_20151228T050851.root
+?Run 1019: ds50daq_20151228T060805.root
+Run 1020: ds50daq_20151228T070524.root
+?Run 1021: ds50daq_20151228T080251.root
+?Run 1022: ds50daq_20151228T090221.root
+?Run 1023: ds50daq_20151228T100132.root
+?Run 1024: ds50daq_20151228T110004.root
+?Run 1025: ds50daq_20151228T115819.root
+?Run 1026: ds50daq_20151228T125720.root
+?Run 1027: ds50daq_20151228T135603.root
+?Run 1028: ds50daq_20151228T145453.root
+?Run 1029: KILLED
+
+
+
+All regular YAl runs unless noted as a laser run.
+
+(LASER) Run 923: ds50daq_20151224T140317.root
+Run 924: ds50daq_20151224T141434.root
+Run 925: ds50daq_20151224T150654.root
+Run 926: ds50daq_20151224T155941.root
+Run 927: ds50daq_20151224T165225.root
+Run 928: ds50daq_20151224T174600.root
+Run 929: ds50daq_20151224T183923.root
+Run 930: ds50daq_20151224T193355.root
+Run 931: ds50daq_20151224T202843.root
+Run 932: ds50daq_20151224T212430.root
+Run 933: ds50daq_20151224T222050.root
+Run 934: ds50daq_20151224T231746.root
+Run 935: ds50daq_20151225T001445.root
+Run 936: ds50daq_20151225T011114.root
+Run 937: ds50daq_20151225T020724.root
+Run 938: ds50daq_20151225T030408.root
+Run 939: ds50daq_20151225T040106.root
+Run 940: ds50daq_20151225T045823.root
+Run 941: ds50daq_20151225T055609.root
+Run 942: ds50daq_20151225T065239.root
+Run 943: ds50daq_20151225T074942.root
+Run 944: ds50daq_20151225T084638.root
+Run 945: ds50daq_20151225T094401.root
+Run 946: ds50daq_20151225T104045.root
+Run 947: ds50daq_20151225T113759.root
+Run 948: ds50daq_20151225T123520.root
+Run 949: ds50daq_20151225T133321.root
+Run 950: ds50daq_20151225T143043.root
+Run 951: ds50daq_20151225T152752.root
+Run 952: KILLED
+(LASER) Run 953: ds50daq_20151225T164623.root
+Run 954: ds50daq_20151225T170046.root
+Run 955: ds50daq_20151225T175859.root
+Run 956: ds50daq_20151225T185708.root
+Run 957: ds50daq_20151225T195439.root
+Run 958: ds50daq_20151225T205115.root
+Run 959: ds50daq_20151225T214917.root
+Run 960: ds50daq_20151225T224730.root
+Run 961: ds50daq_20151225T234636.root
+Run 962: ds50daq_20151226T004452.root
+Run 963: ds50daq_20151226T014301.root
+Run 964: ds50daq_20151226T024055.root
+Run 965: ds50daq_20151226T033812.root
+Run 966: ds50daq_20151226T043608.root
+Run 967: ds50daq_20151226T053344.root
+Run 968: ds50daq_20151226T063127.root
+Run 969: ds50daq_20151226T073006.root
+Run 970: ds50daq_20151226T082756.root
+Run 971: ds50daq_20151226T092533.root
+Run 972: ds50daq_20151226T102321.root
+Run 973: ds50daq_20151226T112145.root
+Run 974: ds50daq_20151226T122023.root
+Run 975: ds50daq_20151226T131843.root
+Run 976: ds50daq_20151226T141706.root
+Run 977: ds50daq_20151226T151643.root
+Run 978: ds50daq_20151226T161509.root
+Run 979: ds50daq_20151226T171303.root
+Run 980: ds50daq_20151226T181121.root
+Run 981: ds50daq_20151226T190947.root
+Run 982: ds50daq_20151226T200848.root
+Run 983: ds50daq_20151226T210648.root
+Run 984: ds50daq_20151226T220512.root
+Run 985: ds50daq_20151226T230331.root
+Run 986: ds50daq_20151227T000153.root
+Run 987: KILLED?
+(LASER) Run 988: ds50daq_20151227T012946.root
+Run 989: ds50daq_20151227T014425.root
+Run 990: ds50daq_20151227T024156.root
+Run 991: ds50daq_20151227T034027.root
+Run 992: ds50daq_20151227T043613.root
+Run 993: ds50daq_20151227T053501.root
+Run 994: ds50daq_20151227T063319.root
+Run 995: ds50daq_20151227T073035.root
+Run 996: ds50daq_20151227T082949.root
+Run 997: ds50daq_20151227T092746.root
+Run 998: ds50daq_20151227T102634.root
+Run 999: ds50daq_20151227T112427.root
+Run 1000: ds50daq_20151227T122310.root
+Run 1001: ds50daq_20151227T132124.root
+Run 1002: ds50daq_20151227T141905.root
+Run 1003: ds50daq_20151227T151654.root
+Run 1004: ds50daq_20151227T161525.root
+Run 1005: ds50daq_20151227T171315.root
+Run 1006: ds50daq_20151227T181147.root
+Run 1007: ds50daq_20151227T191012.root
+Run 1008: ds50daq_20151227T200837.root
+Run 1009: ds50daq_20151227T210828.root
+Run 1010: ds50daq_20151227T220621.root
+Run 1011: ds50daq_20151227T230448.root
+Run 1012: ds50daq_20151228T000300.root
+
+
+
+
+Monday, December 28, 2015, 10:30 (ES) Kill run 1029.
+
+Run#: 1030
+Start Time: Monday, December 28, 2015, 10:32
+RunFileName: ds50daq_20151228T163142.root
+Run Type: laser
+Source: YAl
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Run#: 1031
+Start Time: Monday, December 28, 2015, 10:45
+RunFileName: ds50daq_20151228T164427.root
+Run Type: laser/noise (fiber disconnected)
+Source: YAl
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Monday, December 28, 2015, 10:55 inserted the Co57 source. Take another noise run.
+
+Run#: 1032
+Start Time: Monday, December 28, 2015, 10:45
+RunFileName: ds50daq_20151228T165625.root
+Run Type: laser/noise (fiber disconnected)
+Source: YAl + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Run#: 1033
+Start Time: Monday, December 28, 2015, 11:08
+RunFileName: ds50daq_20151228T170826.root
+Run Type: laser
+Source: YAl + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Monday, December 28, 2015, 11:20 started a regular run, but then realized I had forgotten to remove the capacitor. Removed the capacitor and restarted the run. 
+
+Run#: 1034
+Start Time: 
+RunFileName: ds50daq_20151228T172038.root
+Run Type: regular
+Source: YAl + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+Run#: 1035
+Start Time: Monday, December 28, 2015, 12:22
+RunFileName: ds50daq_20151228T182212.root
+Run Type: laser
+Source: YAl + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+removed the Co57 source.
+
+**************************************************************************************************************************************************************************************
+
+~ Monday, December 28, 2015, 14:39 Juan and I swapped the YAl source with the YBe one. 
+
+**************************************************************************************************************************************************************************************
+ 
+
+Run#: 1036
+Start Time: 
+RunFileName: ds50daq_20151228T202501.root
+Run Type: laser
+Source: YBe 
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Monday, December 28, 2015, 14:42 Replaced the capacitor and began loop of YBe runs, beginning with Run 1037.
+
+Run#: 1037... (loop)
+Start Time: 
+RunFileName: 
+Run Type: regular
+Source: YBe
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Filenames:
+Run 1037: ds50daq_20151228T204245.root
+Run 1038: ds50daq_20151228T213817.root
+Run 1039: ds50daq_20151228T223427.root
+Run 1040: ds50daq_20151228T233126.root
+Run 1041: ds50daq_20151229T002643.root
+Run 1042: ds50daq_20151229T012244.root
+Run 1043: ds50daq_20151229T021909.root
+Run 1044: ds50daq_20151229T031538.root
+Run 1045: ds50daq_20151229T041251.root
+Run 1046: ds50daq_20151229T050946.root
+Run 1047: ds50daq_20151229T060540.root
+Run 1048: ds50daq_20151229T070233.root
+Run 1049: ds50daq_20151229T075904.root
+Run 1050: ds50daq_20151229T085531.root
+Run 1051: ds50daq_20151229T095210.root
+Run 1052: ds50daq_20151229T104822.root
+Run 1053: ds50daq_20151229T114456.root
+Run 1054: ds50daq_20151229T124143.root
+Run 1055: ds50daq_20151229T133746.root
+Run 1056: ds50daq_20151229T143500.root
+Run 1057: ds50daq_20151229T153150.root
+Run 1058: ds50daq_20151229T162729.root
+Run 1059: ds50daq_20151229T172442.root
+Run 1060: ds50daq_20151229T182034.root
+Run 1061: KILLED
+
+
+
+
+Tuesday, December 29, 2015, 14:03 (ES)
+
+Killed Run 1061 to take a laser run. 
+
+Run#: 1062
+Start Time: Tuesday, December 29, 2015, 14:04
+RunFileName: ds50daq_20151229T200317.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Tuesday, December 29, 2015, 14:17 began YBe loop beginning with Run 1063 
+
+Filenames:
+Run 1063: ds50daq_20151229T201729.root
+Run 1064: ds50daq_20151229T211421.root
+Run 1065: ds50daq_20151229T221020.root
+Run 1066: ds50daq_20151229T230638.root
+Run 1067: ds50daq_20151230T000406.root
+Run 1068: ds50daq_20151230T010148.root
+Run 1069: ds50daq_20151230T015932.root
+Run 1070: ds50daq_20151230T025642.root
+Run 1071: ds50daq_20151230T035412.root
+Run 1072: ds50daq_20151230T045019.root
+Run 1073: ds50daq_20151230T054713.root
+Run 1074: ds50daq_20151230T064527.root
+Run 1075: ds50daq_20151230T074116.root
+Run 1076: ds50daq_20151230T083809.root
+Run 1077: ds50daq_20151230T093549.root
+Run 1078: ds50daq_20151230T103317.root
+Run 1079: ds50daq_20151230T113035.root
+Run 1080: ds50daq_20151230T122738.root
+Run 1081: ds50daq_20151230T132321.root
+Run 1082: ds50daq_20151230T141854.root
+Run 1083: ds50daq_20151230T151511.root
+Run 1084: ds50daq_20151230T161105.root
+Run 1085: ds50daq_20151230T170751.root
+Run 1086: ds50daq_20151230T180441.root
+Run 1087: ds50daq_20151230T190222.root
+Run 1088: ds50daq_20151230T195813.root
+Run 1089: ds50daq_20151230T205524.root
+Run 1090: ds50daq_20151230T215216.root
+Run 1091: KILLED
+
+
+
+Wednesday, December 30, 2015, 17:17 (ES) 
+
+Killed run 1091 to take a laser run.
+
+Run#: 1092
+Start Time: Wednesday, December 30, 2015, 17:18
+RunFileName: ds50daq_20151230T231724.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Run#: 1093
+Start Time: Wednesday, December 30, 2015, 17:30
+RunFileName: ds50daq_20151230T232947.root
+Run Type: laser/noise (fiber disconnected)
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 181V/cm - 185V; 
+
+Wednesday, December 30, 2015, 17:42 inserted the Co57 source.
+
+Run#: 1094
+Start Time: Wednesday, December 30, 2015, 17:42
+RunFileName: ds50daq_20151230T234220.root
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+Run#: 1095
+Start Time: 
+RunFileName: ds50daq_20151230T235409.root
+Run Type: regular
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181V/cm - 185V; 
+
+**************************************************************************************************************************************************************
+
+Wednesday, December 30, 2015, 18:58 removed the Co source and increased the grid voltage to 1023 V. Changed the max voltage to 1100V. 
+
+**************************************************************************************************************************************************************
+
+Run#: 1096
+Start Time: Wednesday, December 30, 2015, 19:00
+RunFileName: ds50daq_20151231T005810.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+Wednesday, December 30, 2015, 19:10 began loop of YBe beginning with Run 1097
+
+Run 1097: ds50daq_20151231T011017.root
+Run 1098: ds50daq_20151231T021658.root
+Run 1099: ds50daq_20151231T032516.root
+Run 1100: ds50daq_20151231T043434.root
+Run 1101: ds50daq_20151231T054328.root
+Run 1102: ds50daq_20151231T065258.root
+Run 1103: ds50daq_20151231T080117.root
+Run 1104: ds50daq_20151231T090955.root
+Run 1105: ds50daq_20151231T101925.root
+Run 1106: ds50daq_20151231T112900.root
+Run 1107: ds50daq_20151231T123813.root
+Run 1108: ds50daq_20151231T134627.root
+Run 1109: ds50daq_20151231T145526.root
+Run 1110: KILLED
+
+
+
+Thursday, December 31, 2015, 10:17 (ES)
+
+Killed Run 1110 to take a laser run. 
+
+Run#: 1111
+Start Time: Thursday, December 31, 2015, 10:17
+RunFileName: ds50daq_20151231T161545.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 1000V/cm - 1023V; 
+
+Inserted the Co source. 
+
+Run#: 1112
+Start Time: 
+RunFileName: ds50daq_20151231T163255.root
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 1000V/cm - 1023V; 
+
+Run#: 1113
+Start Time: 
+RunFileName: ds50daq_20151231T165411.root
+Run Type: regular
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+Run#: 1114
+Start Time: 
+RunFileName: ds50daq_20151231T175229.root
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+Thursday, December 31, 2015, 12:05 reinserted the capacitor and began loop of YBe runs beginning at Run1115.
+
+Run 1115: ds50daq_20151231T180536.root
+Run 1116: ds50daq_20151231T191043.root
+Run 1117: ds50daq_20151231T201919.root
+Run 1118: ds50daq_20151231T212754.root
+Run 1119: ds50daq_20151231T223609.root
+Run 1120: ds50daq_20151231T234450.root
+Run 1121: ds50daq_20160101T005312.root
+Run 1122: ds50daq_20160101T020212.root
+Run 1123: ds50daq_20160101T031002.root
+Run 1124: ds50daq_20160101T041900.root
+Run 1125: ds50daq_20160101T052655.root
+Run 1126: ds50daq_20160101T063525.root
+Run 1127: ds50daq_20160101T074350.root
+Run 1128: ds50daq_20160101T085202.root
+Run 1129: ds50daq_20160101T100000.root
+Run 1130: ds50daq_20160101T110820.root
+Run 1131: ds50daq_20160101T121633.root
+Run 1132: ds50daq_20160101T132428.root
+Run 1133: ds50daq_20160101T143341.root
+Run 1134: ds50daq_20160101T154101.root
+Run 1135: ds50daq_20160101T164839.root
+Run 1136: ds50daq_20160101T175642.root
+Run 1137: ds50daq_20160101T190359.root
+Run 1138: ds50daq_20160101T201142.root
+?Run 1139: KILLED
+
+
+
+
+Copied on Monday, January 04, 2016, 10:22 from Juan's handwritten log from over the weekend.
+
+Saturday, January 02, 2016, 15:49
+
+Killed run 1164 to take a laser run.
+
+Run 1165 is laser run.
+
+at 16:08, start loop of runs beginning with run 1166
+
+ 
+
+Sunday, January 03, 2016, 16:16
+
+kill run 1186 to take a laser run.
+
+Run 1187 is a laser run.
+
+At 16:33 begin loop of runs beginning with Run 1188
+
+
+Filenames
+(laser) Run 1165: ds50daq_20160102T215243.root
+Run 1166: ds50daq_20160102T220722.root
+Run 1167: ds50daq_20160102T231731.root
+Run 1168: ds50daq_20160103T002733.root
+Run 1169: ds50daq_20160103T013848.root
+Run 1170: ds50daq_20160103T025036.root
+Run 1171: ds50daq_20160103T040142.root
+Run 1172: ds50daq_20160103T051239.root
+Run 1173: ds50daq_20160103T062441.root
+Run 1174: ds50daq_20160103T073615.root
+Run 1175: ds50daq_20160103T084858.root
+Run 1176: ds50daq_20160103T100023.root
+Run 1177: ds50daq_20160103T111201.root
+Run 1178: ds50daq_20160103T122152.root
+Run 1179: ds50daq_20160103T133241.root
+Run 1180: ds50daq_20160103T144406.root
+Run 1181: ds50daq_20160103T155516.root
+Run 1182: ds50daq_20160103T170456.root
+Run 1183: ds50daq_20160103T181412.root
+Run 1184: ds50daq_20160103T192351.root
+Run 1185: ds50daq_20160103T203307.root
+Run 1186: KILLED
+(laser) Run 1187: ds50daq_20160103T221857.root
+Run 1188: ds50daq_20160103T223238.root
+Run 1189: ds50daq_20160103T234129.root
+Run 1190: ds50daq_20160104T005304.root
+Run 1191: ds50daq_20160104T020414.root
+Run 1192: ds50daq_20160104T031527.root
+Run 1193: ds50daq_20160104T042552.root
+Run 1194: ds50daq_20160104T053626.root
+Run 1195: ds50daq_20160104T064836.root
+Run 1196: ds50daq_20160104T075941.root
+Run 1197: ds50daq_20160104T091115.root
+Run 1198: ds50daq_20160104T102216.root
+Run 1199: ds50daq_20160104T113454.root
+Run 1200: ds50daq_20160104T124717.root
+Run 1201: ds50daq_20160104T135718.root
+Run 1202: ds50daq_20160104T150647.root
+Run 1203: ds50daq_20160104T161552.root
+Run 1204: ds50daq_20160104T172646.root
+Run 1205: ds50daq_20160104T183322.root
+
+
+
+
+Friday, January 01, 2016, 15:27 (ES)
+
+Killed run 1139 to take a laser run. 
+
+Run#: 1140
+Start Time: Friday, January 01, 2016, 15:29
+RunFileName: ds50daq_20160101T212837.root
+Run Type: laser
+Source: YBe
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 1000V/cm - 1023V; 
+
+Friday, January 01, 2016, 15:41 inserted Co source.
+
+Run#: 1141 
+Start Time: Friday, January 01, 2016, 15:41
+RunFileName: ds50daq_20160101T214143.root
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 1000V/cm - 1023V; 
+
+Removed the capacitor and took a regular run. 
+
+Run#: 1142
+Start Time: 
+RunFileName: ds50daq_20160101T215303.root
+Run Type: regular
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+Run#: 1143
+Start Time: 
+RunFileName: ds50daq_20160101T225247.root 
+Run Type: laser
+Source: YBe + strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+Removed Co source. Removed fiber and took a noise run. 
+
+Run#: 1144
+Start Time: 
+RunFileName: ds50daq_20160101T230506.root
+Run Type: laser/noise (fiber disconnected)
+Source: YBe 
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+*******************************************************************************************************************************************************************************
+Friday, January 01, 2016, 17:33 Juan arrived and we swapped YBe with YAl. Took a laser run. 
+
+*******************************************************************************************************************************************************************************
+
+Run#: 1145 
+Start Time: Friday, January 01, 2016, 15:41
+RunFileName: ds50daq_20160101T233343.root
+Run Type: laser
+Source: YAl
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  pulser
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+Friday, January 01, 2016, 17:45 began loop of YAl runs beginnning with Run 1146.
+
+Run#: 1146... (loop)
+Start Time:
+RunFileName: 
+Run Type: regular
+Source: YAl
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger:  regular trigger logic
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 1000V/cm - 1023V; 
+
+Filenames:
+Run 1146: ds50daq_20160101T234518.root
+Run 1147: ds50daq_20160102T005734.root
+Run 1148: ds50daq_20160102T020945.root
+Run 1149: ds50daq_20160102T032028.root
+Run 1150: ds50daq_20160102T043035.root
+Run 1151: ds50daq_20160102T054202.root
+Run 1152: ds50daq_20160102T065222.root
+Run 1153: ds50daq_20160102T080449.root
+Run 1154: ds50daq_20160102T091618.root
+Run 1155: ds50daq_20160102T102729.root
+Run 1156: ds50daq_20160102T113940.root
+Run 1157: ds50daq_20160102T125126.root
+Run 1158: ds50daq_20160102T140331.root
+Run 1159: ds50daq_20160102T151315.root
+Run 1160: ds50daq_20160102T162114.root
+Run 1161: ds50daq_20160102T173126.root
+Run 1162: ds50daq_20160102T184219.root
+Run 1163: ds50daq_20160102T195416.root
+Run 1164: KILLED

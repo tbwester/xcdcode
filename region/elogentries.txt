@@ -1,0 +1,112 @@
+Wednesday, January 20, 2016, 18:33 changed the grid HV to 185 V (181 V/cm). Will wait 15 minutes before starting next run. 
+
+Run#: 1578 
+Start Time: Wednesday, January 20, 2016, 18:48
+RunFileName: ds50daq_20160121T004805.root
+Run Type: laser
+Source: strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: pulser
+Trigger rate: 797.9 Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181 V/cm - 185 V
+
+Run#: 1579 (DRIFT FIELD SCAN 181 V/CM)
+Start Time: Wednesday, January 20, 2016, 18:59
+RunFileName: ds50daq_20160121T005904.root
+Run Type: regular
+Source: strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -1us
+Total gate:  10us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: regular trigger logic
+Trigger rate: Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181 V/cm - 185 V
+
+Run#: 1580
+Start Time: Wednesday, January 20, 2016, 20:10
+RunFileName: ds50daq_20160121T020934.root
+Run Type: laser
+Source: strong Co57 + 2 Pb sheets
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: pulser
+Trigger rate: Hz
+PMT HV:  1450 V
+Capacitor: No
+Field: 181 V/cm - 185 V
+
+Wednesday, January 20, 2016, 20:22 changed the grid HV to 1023 V (1000 V/cm). Will wait 15 minutes before starting next run. 
+
+
+
+
+
+Sunday, January 24, 2016, 15:01
+
+Turned off laser, switched trigger. Removed 57Co source.
+
+Capacitot still in. Current rate about 2 Hz.
+
+Prepare for Kr runs.
+
+Sunday, January 24, 2016, 15:03 Close VV6, turn of scroll pump.
+
+Closed VC2.
+
+Pressure stable at 17.4 psia. Flow stable at 9.6 slpm.
+
+Sunday, January 24, 2016, 15:09 Slowly opened V6 a little bit. Waited to stabilize
+
+Sunday, January 24, 2016, 15:14 Opened a little more ...
+
+Sunday, January 24, 2016, 15:18 V6 fully opened. Rate still seems to be around 2.5 Hz.
+
+Sunday, January 24, 2016, 15:26 Start severalRuns.sh script, with 2000 events per run, starting from Run 1687
+
+
+
+
+
+Run#: 1724
+Start Time: Monday, January 25, 2016, 10:38 
+RunFileName: ds50daq_20160125T163816.root
+Run Type: laser
+Source: background 
+Events#:  500000
+Pre-Trigger: -0.5us
+Total gate:  2us
+Digitizer Channel 0: Preamp output x10
+Digitizer Channel 1: Preamp output x1
+Digitizer Channel 2: Discriminated signal output (Gate generator output)
+Digitizer Trigger: laser 
+Trigger rate:  Hz
+PMT HV:  1450 V
+Capacitor: Yes
+Field: 0 V/cm - 0 V
+
+Monday, January 25, 2016, 10:53 Put 57Co source in. Openend VC1 on source. Opened V6 half-way (red-green) to allow Kr to flow.
+Took capacitor out.
+
+
+
+
+
+RUN 1575
+Wednesday, January 20, 2016, 16:51
+Ramped down grid HV to 0V. Manually switched Channel 1 to OFF. Will wait for 15 minutes before starting sequence of runs at 0V/cm.
